@@ -2,7 +2,7 @@ import flet as ft
 import requests
 import os
 from dotenv import load_dotenv
-from fastapi.middleware.cors import CORSMiddleware
+
 
 
 # Carregar variáveis do arquivo .env
