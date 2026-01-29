@@ -9,7 +9,7 @@ from fastapi.middleware.cors import CORSMiddleware
 load_dotenv()
 
 # URL da API desde variáveis de ambiente
-API_URL = "https://api-estoque.loca.lt/produtos"
+API_URL = os.getenv("API_URL", "http://localhost:8000/produtos") # fallback local
 
 class ProdutoApp:
     def __init__(self, page: ft.Page):
